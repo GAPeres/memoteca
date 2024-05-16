@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CriarPensamentoComponent } from './components/pensamentos/criar-pensamento/criar-pensamento.component';
+import { FormsModule } from '@angular/forms';
+import { ListarPensamentoComponent } from './components/pensamentos/listar-pensamento/listar-pensamento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CriarPensamentoComponent
+    CriarPensamentoComponent,
+    ListarPensamentoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
